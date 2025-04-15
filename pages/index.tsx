@@ -2,6 +2,9 @@
 // pages/index.tsx
 import Header from '../components/Header';
 
+<h1 className="text-4xl font-bold text-blue-600">Tailwind is working 🎉</h1>
+
+
 export default function Home() {
   return (
     <main className="max-w-3xl mx-auto p-6">
