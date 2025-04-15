@@ -8,17 +8,6 @@
 // /pages/about.tsx
 // /components/Header.tsx
 
-// --------------------------
-// pages/index.tsx
-// 🌐 claddorg-site: Clean starter for Cloudflare Pages
-// Includes Tailwind, Next.js pages for resume, papers, about
-
-// Folder structure (to go in GitHub repo):
-// /pages/index.tsx
-// /pages/resume.tsx
-// /pages/papers.tsx
-// /pages/about.tsx
-// /components/Header.tsx
 
 // --------------------------
 // components/Header.tsx
