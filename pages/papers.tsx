@@ -11,7 +11,6 @@ export default function Papers() {
         <li>
           <span>Fractured Fabric (2024) – <em>PDF coming soon</em></span>
         </li>
-        {/* Add more papers as needed */}
       </ul>
     </main>
   );
