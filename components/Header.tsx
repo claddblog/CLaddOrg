@@ -10,17 +10,28 @@
 
 // --------------------------
 // pages/index.tsx
-import Header from '../components/Header';
+// 🌐 claddorg-site: Clean starter for Cloudflare Pages
+// Includes Tailwind, Next.js pages for resume, papers, about
 
-export default function Home() {
+// Folder structure (to go in GitHub repo):
+// /pages/index.tsx
+// /pages/resume.tsx
+// /pages/papers.tsx
+// /pages/about.tsx
+// /components/Header.tsx
+
+// --------------------------
+// components/Header.tsx
+import Link from 'next/link';
+
+export default function Header() {
   return (
-    <main className="max-w-3xl mx-auto p-6">
-      <Header />
-      <h1 className="text-3xl font-bold mb-4">Welcome to cladd.org</h1>
-      <p className="text-gray-700 mb-4">
-        Independent research in number theory and pattern systems.
-      </p>
-      <p className="text-gray-500">Explore publications, resume, and contact information.</p>
-    </main>
+    <nav className="mb-8 space-x-4 text-gray-600">
+      <Link href="/">Home</Link>
+      <Link href="/resume">Resume</Link>
+      <Link href="/papers">Papers</Link>
+      <Link href="/about">About</Link>
+    </nav>
   );
 }
+
