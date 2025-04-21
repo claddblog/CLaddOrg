@@ -1,19 +1,20 @@
-// --------------------------
-// pages/index.tsx
+
 import Header from '../components/Header';
-
-<h1 className="text-4xl font-bold text-blue-600">Tailwind is working 🎉</h1>
-
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="max-w-3xl mx-auto p-6">
+    <main className="min-h-screen max-w-2xl mx-auto px-4 py-12 text-gray-900">
       <Header />
-      <h1 className="text-3xl font-bold mb-4">Welcome to cladd.org</h1>
-      <p className="text-gray-700 mb-4">
-        Independent research in number theory and pattern systems.
-      </p>
-      <p className="text-gray-500">Explore publications, resume, and contact information.</p>
+      <h1 className="text-3xl font-bold mb-2">Christopher C. Ladd</h1>
+      <p className="text-lg mb-6">Independent Researcher — Structure, Systems, Mathematics</p>
+
+      <ul className="space-y-2 text-blue-700 underline text-base">
+        <li><Link href="/resume">Curriculum Vitae</Link></li>
+        <li><Link href="/about">About</Link></li>
+        <li><a href="mailto:c@cladd.blog">Email</a></li>
+      </ul>
     </main>
   );
 }
+
